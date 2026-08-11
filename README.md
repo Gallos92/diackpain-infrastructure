@@ -71,7 +71,7 @@ operational incidents (see `RUNBOOK.md` for one of those incidents in detail).
 - **Migration drift after a squashed migration set was applied to
   production out of band** — required a full recovery process to bring
   Django's migration state back in sync with the live schema without data
-  loss. Full step-by-step recovery documented in [`RUNBOOK.md`](.docs/RUNBOOK.md).
+  loss. Full step-by-step recovery documented in [`RUNBOOK.md`](docs/RUNBOOK.md).
 - **CSRF failures behind the reverse proxy** — traced to missing
   `SECURE_PROXY_SSL_HEADER` and cookie-security settings; fixed by
   explicitly configuring Django to trust the proxy's forwarded headers.
